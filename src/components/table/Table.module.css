@@ -1,0 +1,124 @@
+.table {
+  background-color: white;
+  border-radius: 25px;
+  width: 100%;
+  min-height: 200px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.headers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr 0.5fr 1.5fr 2.5fr 1fr 1.2fr;
+  gap: 5px;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.headerItem {
+  padding: 8px 10px;
+  color: darkgrey;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr 0.5fr 1.5fr 2.5fr 1fr 1.2fr;
+  gap: 5px;
+  padding: 0 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  cursor: pointer;
+}
+
+.cell {
+  padding: 8px 10px;
+  color: black;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.men {
+  color: blue;
+}
+
+.women {
+  color: deeppink;
+}
+.headerItemContainer {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.menuButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  color: #666;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 138px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #ffc2cc;
+  color: azure;
+}

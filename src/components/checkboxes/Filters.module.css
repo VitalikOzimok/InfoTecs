@@ -1,0 +1,50 @@
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radioLabel {
+  margin-right: 5px;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.men {
+  color: blue;
+}
+
+.women {
+  color: deeppink;
+}
+.resetButton {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.resetButton:hover {
+  color: #ff4444;
+}
