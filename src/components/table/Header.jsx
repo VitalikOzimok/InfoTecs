@@ -29,15 +29,16 @@ export function Headers({ onSort }) {
         <div className={styles.headerItemContainer} key={index}>
           <div className={styles.headerItem}>
             {item.sort ? (
-              <span
+              <div
                 className={styles.menuButton}
                 onClick={(e) => {
                   e.stopPropagation();
                   toggleMenu(index);
                 }}
               >
-                {item.label}⋮
-              </span>
+                <span>{item.label}</span>{" "}
+                <span className={styles.arrow}>▸</span>
+              </div>
             ) : (
               <span>{item.label}</span>
             )}
