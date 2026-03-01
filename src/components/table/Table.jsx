@@ -7,7 +7,7 @@ import { PaginationWrapper } from "../pagination/PaginationWrapper";
 import { Modal } from "../modal/Modal";
 import { Filters } from "../checkboxes/Filters";
 
-const itemsPerPage = 10;
+const itemsPerPage = 9;
 
 export function Table() {
   const [data, setData] = useState([]);

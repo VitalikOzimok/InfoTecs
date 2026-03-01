@@ -122,7 +122,9 @@
   background-color: #ffc2cc;
   color: azure;
 }
-.arrow {
+.icon {
   color: black;
-  font-size: large;
+}
+.iconWhite {
+  opacity: 0;
 }

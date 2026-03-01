@@ -11,15 +11,7 @@ export function Headers({ onSort }) {
   };
 
   const handleOptionClick = (option, item) => {
-    let key = "";
-    let order = "";
-
-    if (item.sort) {
-      key = item.field;
-      order = option.value;
-    }
-
-    onSort(key, order);
+    onSort(item.field, option.value);
     setOpenMenuIndex(null);
   };
 
@@ -36,11 +28,14 @@ export function Headers({ onSort }) {
                   toggleMenu(index);
                 }}
               >
-                <span>{item.label}</span>{" "}
-                <span className={styles.arrow}>▸</span>
+                <span>{item.label}</span>
+                <span className={styles.icon}> ▾</span>
               </div>
             ) : (
-              <span>{item.label}</span>
+              <>
+                <span>{item.label}</span>
+                <span className={styles.iconWhite}> ▾</span>
+              </>
             )}
           </div>
 
